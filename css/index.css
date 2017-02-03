@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
+}
+
+body {
+  background-image: url('/images/background.jpg');
+  background-attachment: fixed;
+}
+
+.poem {
+  padding: 50px;
+  margin: 10% 0;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.info {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.info > .title, .info > .author {
+  margin-bottom: 0;
+  color: #666;
+}
+
+.highlight {
+  padding: 0 2px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: #e5e5e5;
+}
+
+.highlight:hover {
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background-color: black;
+  opacity: 0.85;
+  color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.tooltip.active {
+  display: inline-block;
+}
